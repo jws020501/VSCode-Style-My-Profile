@@ -1,0 +1,123 @@
+.home {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.icon_vscode {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 48vw;
+  min-width: 260px;
+  max-width: 720px;
+  fill: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 6vh 1.5rem 10vh;
+  width: 100%;
+  text-align: center;
+}
+.typewriter h1 {
+  overflow: hidden;
+  font-size: 2.6rem;
+  font-weight: 600;
+  border-right: 0.15em solid var(--accent-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  color: #ffffff;
+  letter-spacing: 0.12em;
+  animation: typing 1.6s steps(22, end), blink-caret 0.75s step-end infinite;
+}
+.heading {
+  font-size: 1.05rem;
+  color: #a6b0bf;
+  margin-top: -0.25rem;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.button {
+  font-size: 1rem;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+.button_work {
+  background-color: #ff7b62;
+  color: #0f1419;
+  border-color: #ff7b62;
+}
+.button_contact {
+  background-color: transparent;
+  color: #d4d4d4;
+  border-color: #ff7b62;
+}
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+.button:active {
+  transform: translateY(0);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .typewriter h1 {
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+  }
+  .heading {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .icon_vscode {
+    width: 70vw;
+  }
+  .typewriter h1 {
+    font-size: 1.4rem;
+  }
+  .heading {
+    font-size: 0.85rem;
+  }
+  .buttons {
+    gap: 0.5rem;
+  }
+  .button {
+    font-size: 0.9rem;
+    padding: 0.55em 1em;
+  }
+}

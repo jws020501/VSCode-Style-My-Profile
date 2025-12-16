@@ -1,0 +1,188 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+}
+.projects_title {
+  margin-bottom: 0.8em;
+}
+.project_card {
+  background: var(--article-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.project_name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+}
+.project_name a { color: inherit; text-decoration: none; }
+.project_desc { color: #bfc6d2; min-height: 2.4em; }
+.project_meta { margin-top: .6rem; font-size: .9rem; color: #9aa3b2; display:flex; gap: .75rem; align-items:center }
+
+/* Code examples grid/cards */
+.code_examples_page .examples_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.code_examples_page .example_card {
+  background: var(--article-bg);
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.code_examples_page .card_header { display:flex; justify-content:space-between; align-items:center; margin-bottom: .75rem }
+.code_examples_page .card_title { font-size:1.58rem; font-weight:600 }
+.code_examples_page .card_lv { font-size:0.9rem; color:#9aa3b2 }
+.code_examples_page .card_lv {
+  display: inline-block;
+  padding: 0.32rem 0.9rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.02));
+  color: #d6d7df;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.06);
+  margin-left: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  letter-spacing: 0.3px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.code_examples_page .card_lv:hover{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.35); }
+
+/* level color variants: 1 green, 2 light-green, 3 yellow, 4 orange, 5 red */
+.code_examples_page .card_lv.lv-1 { background: #4caf50; border-color: rgba(76,175,80,0.85); color: #011e09; }
+.code_examples_page .card_lv.lv-2 { background: #8bc34a; border-color: rgba(139,195,74,0.85); color: #082204; }
+.code_examples_page .card_lv.lv-3 { background: #fbc02d; border-color: rgba(251,192,45,0.9); color: #2b2500; }
+.code_examples_page .card_lv.lv-4 { background: #ff9800; border-color: rgba(255,152,0,0.9); color: #2b1400; }
+.code_examples_page .card_lv.lv-5 { background: #f44336; border-color: rgba(244,67,54,0.9); color: #2b0706; }
+.code_examples_page .card_lv.lv-default { background: rgba(255,255,255,0.04); color: #d6d7df; }
+.code_examples_page .example_desc { color:#c7cbd3; margin-bottom:0.75rem; font-size:0.98rem }
+.code_examples_page .example_code { background:#0f1117; color:#d6d7df; padding:0.8rem; border-radius:8px; overflow:auto; max-height:160px; font-size:0.95rem }
+.code_examples_page .card_footer { margin-top:auto; text-align:right }
+.code_examples_page .view_btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 88px;
+}
+
+@media screen and (max-width: 960px) {
+  .code_examples_page .examples_grid { grid-template-columns: repeat(2, 1fr); gap: 1rem }
+}
+@media screen and (max-width: 720px) {
+  .code_examples_page .examples_grid { grid-template-columns: repeat(1, 1fr); gap: 0.75rem }
+}
+
+.code_examples_page .examples_controls {
+  margin-bottom: 0.8rem;
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+.code_examples_page .filters button{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 56px;
+  text-align: center;
+  transition: background .12s ease, transform .08s ease;
+}
+.code_examples_page .filters button:hover{ transform: translateY(-2px); }
+.code_examples_page .filters button.active{
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+@media screen and (max-width: 960px) {
+  .grid_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 720px) {
+  .grid_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Modal styles for code preview */
+.modal_overlay{
+  position:fixed;
+  left:0;top:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1200;
+  padding:24px;
+}
+.modal_box{
+  width:100%;
+  max-width:980px;
+  max-height:90vh;
+  background:var(--article-bg);
+  border-radius:10px;
+  overflow:auto;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+.modal_header{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.modal_body{padding:16px}
+.modal_readme, .modal_code{background:#0f1117;color:#d6d7df;padding:12px;border-radius:8px;white-space:pre-wrap;overflow:auto;margin-bottom:12px}
+
+/* Improve table styling inside rendered README */
+.modal_readme table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+}
+.modal_readme th,
+.modal_readme td {
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal; /* allow wrapping inside table cells */
+  font-size: 0.95rem;
+  color: #d6d7df;
+}
+.modal_readme thead th {
+  background: rgba(255,255,255,0.03);
+  font-weight: 600;
+}
+.modal_readme tbody tr:nth-child(even) td {
+  background: rgba(255,255,255,0.02);
+}
+.modal_readme caption {
+  caption-side: bottom;
+  color: #9aa3b2;
+  font-size: 0.9rem;
+  padding-top: 6px;
+}
+
+/* Code/pre inside README should use normal white-space and monospace */
+.modal_readme pre { background:#0b0c10; padding:12px; border-radius:6px; overflow:auto; }
+.modal_readme code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace; font-size:0.94rem; }
+
+/* Modal code block specific adjustments */
+.modal_code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace; font-size:1.04rem; line-height:1.5; padding:14px; }
+.modal_code code { font-size:1.04rem; }
+
+/* Tabs inside modal */
+.modal_tabs{display:flex;gap:10px;margin-bottom:14px;align-items:center}
+.modal_tabs button{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text-color);padding:8px 14px;border-radius:8px;cursor:pointer;font-size:1.02rem;font-weight:600;line-height:1}
+.modal_tabs button.active{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.08)}
+.close_btn{background:transparent;border:0;color:var(--text-color);font-size:1.05rem;cursor:pointer}

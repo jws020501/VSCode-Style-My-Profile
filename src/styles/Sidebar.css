@@ -1,0 +1,66 @@
+.sidebar {
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid #0c0e14;
+}
+.sidebar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  display: block;
+  flex-shrink: 0;
+  margin-left: 14%;
+}
+
+/* Ensure SVG icons that use currentColor inherit the sidebar text color */
+.sidebar .icon {
+  color: var(--text-color);
+  opacity: 0.95;
+}
+
+.sidebar {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.sidebar_top button,
+.sidebar_bottom button {
+  width: 100%;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sidebar_top button:hover,
+.sidebar_bottom button:hover {
+  background-color: var(--sidebar-hover-bg);
+}
+.sidebar .icon {
+  /* default (inactive) icon color */
+  color: rgb(106, 115, 125);
+}
+
+.sidebar_top button:hover .icon,
+.sidebar_bottom button:hover .icon {
+  /* hover color */
+  color: rgb(225, 228, 232);
+}
+.sidebar_top button.active,
+.sidebar_bottom button.active {
+  border-left: 2px solid  #ff7b62;
+  background-color: var(--sidebar-hover-bg);
+}
+
+.sidebar_top button.active .icon,
+.sidebar_bottom button.active .icon {
+  /* active color */
+  color: rgb(225, 228, 232);
+}

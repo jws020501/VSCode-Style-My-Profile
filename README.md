@@ -1,2 +1,24 @@
-# VSCode-Style-My-Profile
-VSCode 스타일 자기소개페이지 입니다
+# portfolio-fe
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

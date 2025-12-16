@@ -1,0 +1,18 @@
+[
+  {
+    "id": "example-1",
+    "title": "Custom Modal Component",
+    "description": "Reusable modal component with transitions and accessibility features.",
+    "language": "vue",
+    "url": "https://example.com/code/modal",
+    "tags": ["vue", "component"]
+  },
+  {
+    "id": "example-2",
+    "title": "Tiny HTTP Server",
+    "description": "A minimal Node.js HTTP server example for learning purposes.",
+    "language": "node",
+    "url": "https://example.com/code/http-server",
+    "tags": ["node", "backend"]
+  }
+]

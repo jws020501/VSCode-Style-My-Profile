@@ -1,0 +1,20 @@
+[
+  {
+    "id": "post-1",
+    "title": "Vue로 포트폴리오 만들기",
+    "excerpt": "Vue 3와 Composition API로 개인 포트폴리오를 만드는 방법을 정리합니다.",
+    "date": "2024-08-12",
+    "image": "./images/blog-vue.png",
+    "url": "https://example.com/blog/vue-portfolio",
+    "tags": ["vue", "frontend"]
+  },
+  {
+    "id": "post-2",
+    "title": "Node.js 백엔드 최적화 팁",
+    "excerpt": "Node.js 애플리케이션의 성능을 높이는 간단한 팁과 도구들.",
+    "date": "2024-07-05",
+    "image": "./images/blog-node.png",
+    "url": "https://example.com/blog/node-opt",
+    "tags": ["node", "backend"]
+  }
+]
