@@ -38,7 +38,7 @@
     <CodeLine>
       <TagContents :indent="4">
         안녕하세요! <br />
-        저는 조원석입니다!
+        "마부작침 십벌지목" 조원석입니다!
       </TagContents>
     </CodeLine>
     <CodeLine>
@@ -56,12 +56,12 @@
     </CodeLine>
     <CodeLine>
         <TagContents :indent="4">
-        현재는 한화시스템 Beyond SW Camp 18기로 선발되어 다양한 기술스택과 협업도구를 활용하여
+        한화시스템 Beyond SW Camp 18기로 선발되어 다양한 기술스택과 협업도구를 활용하여
         </TagContents>
     </CodeLine>    
     <CodeLine>    
         <TagContents :indent="4">
-        팀프로젝트를 진행중에 있습니다.
+        팀프로젝트를 수행하여 최종 1위로 수료하였습니다.
         </TagContents>
     </CodeLine>
 
@@ -123,6 +123,30 @@
       <TagContents :indent="6">
         <dl>
           <dt>
+            <em>Spring,Express.js, NestJS</em>
+          </dt>
+          <dd>
+            - Spring-boot와 NestJS를 활용한 backend 개발 경험이 있습니다.
+          </dd>
+          <dd>
+            - RESTful API 설계 및 구현 경험이 있으며, JWT를 활용한 인증 및 권한 부여를 다뤄본 경험이 있고
+              데이터베이스와의 연동 및 ORM 사용 경험이 있습니다.
+          </dd>
+          <dd>
+            - 미들웨어 사용 및 라우팅 설정에 대한 이해가 있습니다.
+            - 서버 성능 최적화 및 보안 강화에 대한 기본적인 이해를 가지고 있습니다.
+          </dd>
+          <dd>
+            - Express.js를 활용한 간단한 서버 구축 경험이 있습니다. 
+          </dd>
+        </dl>
+      </TagContents>
+    </CodeLine>
+    <CodeLine />
+    <CodeLine>
+      <TagContents :indent="6">
+        <dl>
+          <dt>
             <em>SQL, FileMaker,restAPI</em>
           </dt>
           <dd>
@@ -138,6 +162,30 @@
       </TagContents>
     </CodeLine>
     <CodeLine />
+    <CodeLine>
+      <TagContents :indent="6">
+        <dl>
+          <dt>
+            <em>CI/CD</em>
+          </dt>
+          <dd>
+            - Jenkins, GitHub Actions 등을 활용한 CI/CD 파이프라인 구축 경험이 있습니다.
+            - Git을 활용한 버전 관리 및 협업 경험이 풍부합니다.
+          </dd>
+          <dd>
+            - 자동화된 빌드, 테스트, 배포 프로세스를 설계하고 구현할 수 있습니다.
+            - Docker와 같은 컨테이너화 기술을 활용한 배포 경험이 있습니다.
+            - 모니터링 및 로깅 도구를 사용하여 배포된 애플리케이션의 상태를 관리한 경험이 있습니다.
+          </dd>
+          <dd>
+            - AWS, Azure 등의 클라우드 플랫폼을 활용한 배포 경험이 있습니다.
+            - 블루그린 배포, 카나리 배포 등 다양한 배포 전략에 대한 이해가 있습니다.
+            - 장애 복구 및 롤백 전략을 수립하고 실행한 경험이 있습니다.
+            - 팀원들과 효과적으로 협업하여 CI/CD 프로세스를 개선한 경험이 있습니다.
+          </dd>
+        </dl>
+      </TagContents>
+    </CodeLine>
     <CodeLine />
     <CodeLine>
       <TagContents :indent="5">
@@ -155,17 +203,33 @@
           <dd>
             - GSAP의 animation, scroll trigger를 활용한 인터랙티브 웹 개발에 대해 공부중입니다.
           </dd>
+          <br/>
           <dt>
             <em>Spring</em>
           </dt>
           <dd>
             - Spring-boot와,JAVA를 활용한 backend 개발에 대해 공부중입니다.
           </dd>
+          <br/>
           <dt>
             <em>LLM</em>
           </dt>
           <dd>
             - ChatGPT API를 활용한 다양한 프로젝트를 구상하고 있으며, LLM의 활용방안에 대해 공부중입니다.
+          </dd>
+          <br/>
+          <dt>
+            <em>Cloud engineering</em>
+          </dt>
+          <dd>
+            - AWS, Azure 등의 클라우드 플랫폼을 활용한 인프라 구축 및 관리에 대해 공부중입니다.
+          </dd>
+          <br/>
+          <dt>
+            <em>Virtual Factory</em>
+          </dt>
+          <dd>
+            - virtual factory에 관련하여 흥미가 생기게 되어 관련 기술과 적용사례에 대해 공부중입니다.
           </dd>
         </dl>
       </TagContents>
