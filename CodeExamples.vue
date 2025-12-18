@@ -44,7 +44,14 @@
           <div class="modal_readme" v-html="renderedReadme"></div>
         </div>
         <div v-else>
-          <div class="modal_code" v-html="renderedCode"></div>
+          <CodeBlock
+          :code="selectedExample.code"
+          :numbered="true"
+          :show-header="false"
+          :file-name=" selectedExample.title "
+          language="js"
+          theme="dracula">
+        </CodeBlock>
         </div>
       </div>
     </div>
@@ -53,6 +60,7 @@
 
 <script setup>
 import { ref, onMounted, computed } from 'vue';
+import { CodeBlock } from 'vuejs-code-block';
 import MarkdownIt from 'markdown-it';
 import DOMPurify from 'dompurify';
 
@@ -199,13 +207,6 @@ const renderedReadme = computed(() => {
   } catch (e) {
     return DOMPurify.sanitize('<pre>' + escapeHtml(txt) + '</pre>');
   }
-});
-
-const renderedCode = computed(() => {
-  const txt = selectedExample.value?.code || '';
-  if (!txt) return '';
-  // Return markup compatible with vuejs-code-block styling (fallback as HTML string)
-  return '<pre class="vuejs-code-block language-javascript"><code class="language-javascript">' + escapeHtml(txt) + '</code></pre>';
 });
 
 function escapeHtml(str) {
