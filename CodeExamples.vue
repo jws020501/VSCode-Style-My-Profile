@@ -47,7 +47,7 @@
           <CodeBlock
           :code="selectedExample.code"
           :numbered="true"
-          :show-header="false"
+          :show-header=" false "
           :file-name=" selectedExample.title "
           language="js"
           theme="dracula">
