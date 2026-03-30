@@ -30,7 +30,7 @@
   const loading = ref(true);
   const error = ref(null);
 
-  const apikey = process.env.VUE_APP_GIT_AUTH_KEY;
+  // const apikey = process.env.VUE_APP_GIT_AUTH_KEY;
 
   function formatDate(d) {
     if (!d) return '';
@@ -42,9 +42,9 @@
     error.value = null;
     try {
       const headers = {};
-      if (apikey && apikey !== 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN') {
-        headers['Authorization'] = `Bearer ${apikey}`;
-      }
+      // if (apikey && apikey !== 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN') {
+      //   headers['Authorization'] = `Bearer ${apikey}`;
+      // }
       const res = await fetch('https://api.github.com/users/jws020501/repos?sort=updated&per_page=100', {
         headers,
       });
