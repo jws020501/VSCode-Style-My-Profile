@@ -64,6 +64,11 @@
         팀프로젝트를 수행하여 최종 1위로 수료하였습니다.
         </TagContents>
     </CodeLine>
+    <CodeLine>    
+        <TagContents :indent="4">
+        현재는 한국 폴리텍 대학교 AI소프트웨어과에 재학중이며, 다양한 기술스택과 프로젝트 경험을 쌓아가고 있습니다.
+        </TagContents>
+    </CodeLine>
 
     <CodeLine>
       <TagClose tagname="heaeder" :indent="3" />
@@ -171,7 +176,9 @@
           </dt>
           <dd>
             - Jenkins, GitHub Actions 등을 활용한 CI/CD 파이프라인 구축 경험이 있습니다.
-            - Git을 활용한 버전 관리 및 협업 경험이 풍부합니다.
+          </dd>
+          <dd>
+          - Git을 활용한 버전 관리 및 협업 경험이 풍부합니다.
           </dd>
           <dd>
             - 자동화된 빌드, 테스트, 배포 프로세스를 설계하고 구현할 수 있습니다.
