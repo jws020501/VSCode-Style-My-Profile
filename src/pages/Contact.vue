@@ -30,7 +30,7 @@ import EmailForm from '../components/EmailForm.vue';
 
 const socialItems = [
   { social: 'email', link: 'jws020501@naver.com', href: 'mailto:jws020501@naver.com' },
-  { social: 'github', link: 'jws020501', href: 'https://github.com/jws020501' },
+  { social: 'github', link: 'Wonseok Cho', href: 'https://github.com/jws020501' },
   { social: 'instagram', link: '@seok_my_xick', href: 'https://www.instagram.com/seok_my_xick/' },
   { social: 'blog', link: '@jws020501', href: 'https://velog.io/@jws020501' },
 ];

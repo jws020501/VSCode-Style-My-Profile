@@ -38,7 +38,7 @@
     <CodeLine>
       <TagContents :indent="4">
         안녕하세요! <br />
-        "마부작침 십벌지목" 조원석입니다!
+        "26학번 중고신입" 조원석입니다!
       </TagContents>
     </CodeLine>
     <CodeLine>
